@@ -3,12 +3,14 @@ from urllib.request import urlopen
 import json
 import sklearn
 from bs4 import BeautifulSoup
+import os
+import sys
 
 
 data = {"arindambiswas":{"name":"Arindam Biswas", "gh_handle":"aribis369" ,"fb_link":"https://facebook.com/aribis369", "bio":"to be written by the member", "pic_src":"link", "role":"Core Team Member"}, "dibyaprakashdas":{"name":"Dibya Prakash Das", "gh_handle":"dibyadas", "fb_link":"https://facebook.com/user_name", "bio":"whatever you like", "pic_src":"link", "role":"Core Team Member"},
 "pranitbauva":{"name":"Panit Bauva", "gh_handle":"pranitbauva1997" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"link", "role":"Executive Lead Marketing"},
 "himanshumishra":{"name":"Himanshu Mishra", "gh_handle":"orkohunter" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"link", "role":"Advisor"},
-"ayushgoyal":{"name":"Ayush Goyal", "gh_handle":"Defcon-007" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"link", "role":"Executive Head Projects"}}
+"ayushgoyal":{"name":"Ayush Goyal", "gh_handle":"Defcon-007" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"lnik of the repo", "role":"Executive Head Projects"}}
 
 r=0
 app = Flask(__name__)
@@ -60,6 +62,7 @@ def main(name):
     return "True"
 
 if __name__ == "__main__":  # This is for local testing
+    print("initialising")
     app.run(host='localhost', port=3453, debug=True)
 
 # if __name__ == "__main__":  # This will come in use when
