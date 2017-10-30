@@ -5,6 +5,7 @@ import sklearn
 from bs4 import BeautifulSoup
 import os
 import sys
+import sklearn
 
 
 data = {"arindambiswas":{"name":"Arindam Biswas", "gh_handle":"aribis369" ,"fb_link":"https://facebook.com/aribis369", "bio":"to be written by the member", "pic_src":"link", "role":"Core Team Member"}, "dibyaprakashdas":{"name":"Dibya Prakash Das", "gh_handle":"dibyadas", "fb_link":"https://facebook.com/user_name", "bio":"whatever you like", "pic_src":"link", "role":"Core Team Member"},
@@ -13,6 +14,7 @@ data = {"arindambiswas":{"name":"Arindam Biswas", "gh_handle":"aribis369" ,"fb_l
 "ayushgoyal":{"name":"Ayush Goyal", "gh_handle":"Defcon-007" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"lnik of the repo", "role":"Executive Head Projects"}}
 
 r=0
+f=0
 app = Flask(__name__)
 
 
@@ -63,6 +65,8 @@ def main(name):
 
 if __name__ == "__main__":  # This is for local testing
     print("initialising")
+    k=0
+    print("init end")
     app.run(host='localhost', port=3453, debug=True)
 
 # if __name__ == "__main__":  # This will come in use when
