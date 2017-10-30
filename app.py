@@ -1,6 +1,7 @@
 from flask import Flask, redirect, url_for, request, render_template
 from urllib.request import urlopen
 import json
+import sklearn
 from bs4 import BeautifulSoup
 
 
@@ -9,7 +10,7 @@ data = {"arindambiswas":{"name":"Arindam Biswas", "gh_handle":"aribis369" ,"fb_l
 "himanshumishra":{"name":"Himanshu Mishra", "gh_handle":"orkohunter" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"link", "role":"Advisor"},
 "ayushgoyal":{"name":"Ayush Goyal", "gh_handle":"Defcon-007" ,"fb_link":"https://facebook.com/user_name", "bio":"to be written by the member", "pic_src":"link", "role":"Executive Head Projects"}}
 
-
+r=0
 app = Flask(__name__)
 
 
